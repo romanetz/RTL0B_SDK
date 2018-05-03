@@ -1,0 +1,7 @@
+# Build
+/Build/obj/
+
+# Visual Studio
+/.vs/*
+!/.vs/tasks.vs.json
+!/.vs/launch.vs.json

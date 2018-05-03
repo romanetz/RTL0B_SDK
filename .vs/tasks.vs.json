@@ -1,0 +1,23 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "Build",
+      "appliesTo": "wsl_make.bat",
+      "type": "default",
+      "command": "${env.COMSPEC}",
+      "args": [
+        "wsl_make all"
+      ]
+    },
+    {
+      "taskName": "Clean",
+      "appliesTo": "wsl_make.bat",
+      "type": "default",
+      "command": "${env.COMSPEC}",
+      "args": [
+        "wsl_make clean"
+      ]
+    }
+  ]
+}

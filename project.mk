@@ -9,12 +9,14 @@
 #NEW_SNTP = 1
 WIFI_API_SDK = 1
 USE_AT = 1
+
 include $(GCCMK_PATH)sdkset.mk
 #=============================================
 # Project Files
 #=============================================
 #user main
 ADD_SRC_C += project/src/main.c
+
 # components
 #ADD_SRC_C += ...
 #INCLUDES += ...

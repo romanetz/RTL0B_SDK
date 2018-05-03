@@ -199,7 +199,7 @@ class xFirmwareImage(object):
 				x = self.addr	
 				for s in imgsegs:
 					while x < s.addr:
-						self.data += '\0'
+						self.data += b"\x00"
 						x += 1
 					self.data += s.data	
 					x += s.size

@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "inheritEnvironments": [
+        "gcc-arm"
+      ],
+      "name": "firmware",
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}/component/**",
+        "${workspaceRoot}/project/src/**",
+        "${workspaceRoot}/project/inc/**"
+      ],
+      "defines": [
+        "CONFIG_PLATFORM_8711B",
+        "F_CPU=125000000L",
+        "M4",
+        "__CORTEX_M4"
+      ],
+      "intelliSenseMode": "linux-gcc-arm",
+      "browse": {
+        "path": [
+          "${workspaceRoot}"
+        ],
+        "limitSymbolsToIncludedHeaders": false,
+        "databaseFilename": ""
+      }
+    }
+  ],
+  "environments": [
+    {
+      //"BUILDTOOLS": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Linux\\GNU MCU Eclipse\\Build Tools\\2.9-20170629-1013\"",
+      //"GCCARMTOOLS": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Linux\\gcc_arm\"",
+      //"BUILDTOOLS": "C:\\RTL\\gcc-arm-none-eabi-7-2017-q4",
+      //"GCCARMTOOLS": "C:\\RTL\\msys\\1.0",
+      //"WSLPATH": "C:\\Windows\\System32",
+      "PATH": "${env.WSLPATH};${env.BUILDTOOLS};${env.BUILDTOOLS}/bin;${env.GCCARMTOOLS};${env.GCCARMTOOLS}/bin;${env.PATH}"
+    }
+  ]
+}

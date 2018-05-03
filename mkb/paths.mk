@@ -1,22 +1,7 @@
-#---------------------------
-# User defined (in userset.mk)
-#---------------------------
-SDK_PATH ?= ./
-ifneq ($(shell uname), Linux)
-GCC_PATH ?= d:/MCU/GNU_Tools_ARM_Embedded/7.2017-q4-major/bin/
-OPENOCD_PATH ?= d:/MCU/OpenOCD/bin/
-PYTHON ?= c:/Python27/python.exe
-COM_PORT ?= COM2
-else
-GCC_PATH ?=~/gcc-arm-none-eabi-7-2017-q4-major/bin/
-PYTHON ?= python
-COM_PORT ?= /dev/ttyS2
-endif
-FLASHER_TYPE ?= UART
-#---------------------------
-# Default
-#---------------------------
+#=============================================
 # Compilation tools
+#=============================================
+
 CROSS_COMPILE = $(GCC_PATH)arm-none-eabi-
 AR = $(CROSS_COMPILE)ar
 CC = $(CROSS_COMPILE)gcc
@@ -28,12 +13,16 @@ SIZE = $(CROSS_COMPILE)size
 OBJCOPY = $(CROSS_COMPILE)objcopy
 OBJDUMP = $(CROSS_COMPILE)objdump
 
-# TARGET dirs
+#=============================================
+# Targert folder
+#=============================================
 TARGET ?= build
 OBJ_DIR ?= $(TARGET)/obj
 BIN_DIR ?= $(TARGET)/bin
 ELFFILE ?= $(OBJ_DIR)/$(TARGET).axf
 
-# openocd tools
+#=============================================
+# OpenOCD tools
+#=============================================
 OPENOCD ?= $(OPENOCD_PATH)openocd
 

@@ -1,4 +1,3 @@
 #!/bin/sh
-time make -s -j 20 clean
-time make -s -j 20 all OTA_IDX=1
-time make -s -j 20 all OTA_IDX=2
+time make -s -j 10 clean
+time make -s -j 10 all

@@ -1,4 +1,4 @@
-# RTL0B_SDK
+# RTL0B_SDK VS2017
 MySDK RTL8710BN
 
 WiFi modules: MJIOT-AMB-03, EMW3080
@@ -11,3 +11,5 @@ WiFi modules: MJIOT-AMB-03, EMW3080
 >user_name ALL=(ALL) NOPASSWD: /bin/chmod 666 /dev/ttyS[0-9]*
  
 Based source [Realtek IoT/Arduino Solution](https://www.amebaiot.com/en/ameba-sdk-download)
+
+Добавлены файлы для открытия проекта-папки в Visual Studio 2017 (версия v15.6.7, в v15.6.6 тоже должно работать).

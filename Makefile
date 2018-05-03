@@ -41,5 +41,3 @@ go_rom_monitor:
 .PHONY: clean
 clean:
 	@$(MAKE) -f $(GCCMK_PATH)sdkbuild.mk clean
-
-	
