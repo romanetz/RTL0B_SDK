@@ -3,7 +3,7 @@
   "tasks": [
     {
       "taskName": "Build",
-      "appliesTo": "wsl_make.bat",
+      "appliesTo": "Makefile",
       "type": "default",
       "command": "${env.COMSPEC}",
       "args": [
@@ -12,11 +12,20 @@
     },
     {
       "taskName": "Clean",
-      "appliesTo": "wsl_make.bat",
+      "appliesTo": "Makefile",
       "type": "default",
       "command": "${env.COMSPEC}",
       "args": [
         "wsl_make clean"
+      ]
+    },
+    {
+      "taskName": "Start GDB Server",
+      "appliesTo": "Makefile",
+      "type": "default",
+      "command": "${env.COMSPEC}",
+      "args": [
+        "C:\\Data\\JLink_V632a\\JLinkGDBServer.exe -select USB -device Cortex-M4 -if SWD -speed 1000 -ir"
       ]
     }
   ]

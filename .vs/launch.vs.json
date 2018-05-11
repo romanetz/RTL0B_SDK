@@ -7,24 +7,19 @@
       "name": "boot_all.bin",
       "project": "build\\bin\\boot_all.bin",
       "cwd": "${workspaceRoot}",
-      "program": "${workspaceRoot}\\BUILD\\${workspaceRootFolderName}.elf",
+      "program": "${workspaceRoot}\\build\\obj\\build.axf",
       "MIMode": "gdb",
       "externalConsole": true,
       "inheritEnvironments": [
         "gcc_arm"
       ],
-      "miDebuggerPath": "${env.gccpath}\\bin\\arm-none-eabi-gdb.exe",
+      "miDebuggerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Linux\\gcc_arm\\bin\\arm-none-eabi-gdb.exe",
       "setupCommands": [
         {
-          "text": "Documentation: Learn how to configure embedded debugging",
-          "description": "See here for more info http://aka.ms/vsembeddeddebug",
-          "ignoreFailures": true
+          "text": "-environment-cd ${workspaceRoot}/build/obj"
         },
         {
-          "text": "-environment-cd ${workspaceRoot}/BUILD"
-        },
-        {
-          "text": "-file-exec-and-symbols ${workspaceRootFolderName}.elf",
+          "text": "-file-exec-and-symbols build.axf",
           "description": "load file",
           "ignoreFailures": false
         },
@@ -34,14 +29,10 @@
         }
       ],
       "visualizerFile": "${debugInfo.linuxNatvisPath}",
-      "showDisplayString": true,
-      "miDebuggerServerAddress": "localhost:3333",
-      "launchCompleteCommand": "None",
-      "debugServerPath": "path-to-your\\gdbserver.exe",
-      "debugServerArgs": "-f path-to-your/board.cfg",
-      "serverStarted": "GDB\\ server\\ started",
-      "filterStderr": true,
-      "filterStdout": true
-    }
+      "miDebuggerServerAddress": "localhost:2331"//,
+      //"debugServerPath": "C:\\Data\\JLink_V632a\\JLinkGDBServer.exe",
+      //"debugServerArgs": "-select USB -device Cortex-M4 -if SWD -speed 1000 -ir",
+      //"serverLaunchTimeout": 3000
+   }
   ]
 }

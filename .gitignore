@@ -1,5 +1,6 @@
 # Build
-/Build/obj/
+/build/obj/*
+!/build/obj/build.axf
 
 # Visual Studio
 /.vs/*
