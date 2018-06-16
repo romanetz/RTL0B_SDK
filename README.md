@@ -12,4 +12,4 @@ WiFi modules: MJIOT-AMB-03, EMW3080
  
 Based source [Realtek IoT/Arduino Solution](https://www.amebaiot.com/en/ameba-sdk-download)
 
-Добавлены файлы для открытия проекта-папки в Visual Studio 2017 (версия v15.6.7, в v15.6.6 тоже должно работать).
+Добавлены файлы для открытия проекта-папки в Visual Studio 2017 (v15.6.6+).

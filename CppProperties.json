@@ -1,12 +1,12 @@
 {
   "configurations": [
     {
-      "inheritEnvironments": [ "${cpp.activeConfiguration}" ],
+      "inheritEnvironments": [ "linux-gcc-arm" ],
       "name": "firmware",
       "includePath": [
-        "${workspaceRoot}/component/**",
-        "${workspaceRoot}/project/src/**",
-        "${workspaceRoot}/project/inc/**"
+        "${workspaceRoot}\\component\\**",
+        "${workspaceRoot}\\project\\src\\**",
+        "${workspaceRoot}\\project\\inc\\**"
       ],
       "defines": [
         "CONFIG_PLATFORM_8711B",
@@ -28,9 +28,12 @@
     {
       "BUILDTOOLS": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Linux\\GNU MCU Eclipse\\Build Tools\\2.9-20170629-1013\"",
       "GCCARMTOOLS": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Linux\\gcc_arm\"",
+      "JLINKPATH": "C:\\Data\\JLink_V632a",
+      //"JLINKPATH": "C:\\Data\\JLink_V622a",
+      "BASHPATH": "C:\\Windows\\sysnative",
       //"BUILDTOOLS": "C:\\RTL\\gcc-arm-none-eabi-7-2017-q4",
       //"GCCARMTOOLS": "C:\\RTL\\msys\\1.0",
-      "PATH": "${env.BUILDTOOLS};${env.BUILDTOOLS}/bin;${env.GCCARMTOOLS};${env.GCCARMTOOLS}/bin;${env.PATH}"
+      "PATH": "${env.BUILDTOOLS};${env.JLINKPATH};${env.BASHPATH};${env.BUILDTOOLS}\\bin;${env.GCCARMTOOLS};${env.GCCARMTOOLS}\\bin;${env.PATH}"
     }
   ]
 }

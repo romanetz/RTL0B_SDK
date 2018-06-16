@@ -1,0 +1,7 @@
+h
+r
+loadbin build\bin\ota1.bin 0x0800b000
+verifybin build\bin\ota1.bin, 0x0800b000
+r
+g
+q

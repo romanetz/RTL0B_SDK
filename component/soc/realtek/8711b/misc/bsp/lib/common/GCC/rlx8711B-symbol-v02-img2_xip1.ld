@@ -80,9 +80,7 @@ SECTIONS
 
 	.ram_image2.text :
 	{
-
 	  KEEP(*(.image2.ram.text*))
-
 	} > BD_RAM
 
 	.ram_image2.data : 

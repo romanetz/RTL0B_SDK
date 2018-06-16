@@ -1,0 +1,6 @@
+h
+r
+savebin fullflash.bin 0x08000000 0x00200000
+r
+g
+q

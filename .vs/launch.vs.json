@@ -5,13 +5,13 @@
     {
       "type": "cppdbg",
       "name": "boot_all.bin",
-      "project": "build\\bin\\boot_all.bin",
+      "project": "build\\bin\\ota1.bin",
       "cwd": "${workspaceRoot}",
       "program": "${workspaceRoot}\\build\\obj\\build.axf",
       "MIMode": "gdb",
       "externalConsole": true,
       "inheritEnvironments": [
-        "gcc_arm"
+        "linux-gcc-arm"
       ],
       "miDebuggerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Linux\\gcc_arm\\bin\\arm-none-eabi-gdb.exe",
       "setupCommands": [
@@ -28,8 +28,9 @@
           "ignoreFailures": true
         }
       ],
-      "visualizerFile": "${debugInfo.linuxNatvisPath}",
+      //"visualizerFile": "${debugInfo.linuxNatvisPath}",
       "miDebuggerServerAddress": "localhost:2331"//,
+	  // не работает, VS не подключается к запущенному экземпляру
       //"debugServerPath": "C:\\Data\\JLink_V632a\\JLinkGDBServer.exe",
       //"debugServerArgs": "-select USB -device Cortex-M4 -if SWD -speed 1000 -ir",
       //"serverLaunchTimeout": 3000
